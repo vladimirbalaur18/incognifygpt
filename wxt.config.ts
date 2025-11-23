@@ -7,4 +7,13 @@ export default defineConfig({
     vite: () => ({
         plugins: [tailwindcss()],
     }),
+    manifest: {
+        permissions: ['storage'],
+        web_accessible_resources: [
+            {
+                resources: ['injected.js'],
+                matches: ['*://*.openai.com/*', '*://*.chatgpt.com/*'],
+            },
+        ],
+    },
 });
