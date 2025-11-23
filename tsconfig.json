@@ -1,7 +1,12 @@
 {
   "extends": "./.wxt/tsconfig.json",
   "compilerOptions": {
-    "allowImportingTsExtensions": true,
-    "jsx": "react-jsx"
+    "target": "ES2022",
+    "module": "ES2022",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "lib": ["ES2022", "dom"],
+    "jsx": "preserve"
   }
 }
