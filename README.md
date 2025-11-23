@@ -31,11 +31,19 @@ A browser extension that intercepts ChatGPT requests to detect and anonymize ema
     ```bash
     npm run dev
     ```
+    For firefox:
+   ```bash
+   npm run dev:firefox
+   ```
 
-3. **Build for Production**
+4. **Build for Production**
     ```bash
     npm run build
     ```
+   For firefox:
+   ```bash
+   npm run build:firefox
+   ```
     This will generate a `.output/` directory containing the extension for Chrome/Edge/Firefox.
 
 ### Load Unpacked Extension (Chrome/Edge)
@@ -55,7 +63,7 @@ A browser extension that intercepts ChatGPT requests to detect and anonymize ema
 
 This extension uses the [WXT](https://wxt.dev/) framework with React.
 
-### Core Components
+### Core parts
 
 1. **Fetch Interception (`public/injected.js`)**:
     - A script injected into the page context to override `window.fetch`.
