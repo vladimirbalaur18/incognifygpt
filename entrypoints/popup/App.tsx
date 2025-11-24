@@ -13,7 +13,7 @@ function App() {
 
 function PopupContent() {
     // In the popup, we always want to show the UI content.
-    // We can reuse the Modal component, but treating it as the main view.
+    // We reuse the Modal component, but treating it as the main view.
     // passing onClose as window.close to close the popup.
     return (
         <div className="w-[600px] h-[500px] bg-background text-foreground">
